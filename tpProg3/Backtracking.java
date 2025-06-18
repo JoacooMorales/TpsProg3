@@ -1,6 +1,13 @@
 
 import java.util.*;
 
+/*
+ * Estrategia usada:
+ * Se usa backtracking para probar todas las combinaciones posibles de maquinas.
+ * Cada vez que se agrega una maquina, se suman las piezas que produce.
+ * Cuando se llega justo a la cantidad total de piezas, se guarda la secuencia si es mejor.
+ * Se hace una poda cuando ya usamos mas maquinas que la mejor solucion encontrada.
+ */
 public class Backtracking {
 
     public static Solucion mejorSolucion = null; // se guarda la mejor (menos máquinas usadas)
